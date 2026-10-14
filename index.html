@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092c25">
+  <title>Madezur Poker — Masuk</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="widgets.css">
+  <script src="icons.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="login-card" aria-labelledby="form-title">
+    <a class="app-brand" href="./"><span aria-hidden="true">♠</span> Madezur Poker</a>
+    <div class="login-eyebrow">SELAMAT DATANG KEMBALI</div>
+    <h2 id="form-title">Masuk</h2>
+    <p class="intro">Masuk dengan akun Anda untuk bermain.</p>
+    <form id="login-form">
+      <label for="identity">Username</label>
+      <input id="identity" name="identity" autocomplete="username" placeholder="Masukkan username" maxlength="100" required>
+      <label for="password">Kata sandi</label>
+      <div class="password-field">
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Masukkan kata sandi" required>
+        <button class="toggle-password" type="button" aria-label="Tampilkan kata sandi" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button>
+      </div>
+      <button class="submit" type="submit">Masuk</button>
+      <p id="form-status" class="status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="account-switch"><span id="account-prompt">Belum punya akun?</span> <button id="switch-mode" type="button">Daftar sekarang</button></div>
+    <footer>© 2026 Madezur Poker</footer>
+  </main>
+</body>
+</html>
